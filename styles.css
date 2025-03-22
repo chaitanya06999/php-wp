@@ -7,149 +7,130 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #f3e5f5, #e1bee7);
-    color: #4a148c;
+    background-color: #f5f5f5;
+    color: #333;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    transition: background 0.5s ease;
 }
 
-/* Centered container with pastel color accents */
+/* Centered container */
 .container {
-    background: rgba(255, 255, 255, 0.85);
-    border-radius: 25px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 40px;
     width: 100%;
     max-width: 500px;
     text-align: center;
     position: relative;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover effect for container */
-.container:hover {
-    transform: scale(1.03);
-    box-shadow: 0 8px 50px rgba(225, 190, 231, 0.8);
-}
-
-/* Header with soft pastel glow */
+/* Header */
 h2 {
-    font-size: 34px;
+    font-size: 28px;
     font-weight: 700;
-    color: #9c27b0;
-    margin-bottom: 30px;
+    color: #444;
+    margin-bottom: 20px;
     text-transform: uppercase;
-    letter-spacing: 4px;
-    text-shadow: 0 0 15px rgba(156, 39, 176, 0.7), 0 0 25px rgba(156, 39, 176, 0.5);
+    letter-spacing: 2px;
 }
 
-/* Input and select fields with soft pastel colors */
+/* Input and select fields */
 input[type="text"], select {
-    padding: 18px;
-    margin: 15px 0;
-    font-size: 18px;
-    border-radius: 12px;
-    border: 2px solid #e1bee7;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
     outline: none;
     width: 100%;
-    background-color: #f8bbd0;
-    color: #4a148c;
+    background-color: #f9f9f9;
+    color: #333;
     box-sizing: border-box;
-    transition: border 0.3s ease, box-shadow 0.3s ease;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
 }
 
-/* Focus state for input fields */
 input[type="text"]:focus, select:focus {
-    border-color: #9c27b0;
-    box-shadow: 0 0 12px rgba(156, 39, 176, 0.6);
+    border-color: #666;
 }
 
-/* Button with pastel color effects */
+/* Button */
 button {
     width: 100%;
-    padding: 20px;
-    font-size: 20px;
-    border-radius: 20px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 6px;
     border: none;
-    background-color: #9c27b0;
+    background-color: #444;
     color: #fff;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #8e24aa;
-    transform: translateY(-6px);
+    background-color: #333;
 }
 
 button:active {
-    background-color: #7b1fa2;
-    transform: translateY(2px);
+    background-color: #222;
 }
 
 /* Label styling */
 label {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
-    color: #4a148c;
+    color: #555;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     text-align: left;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 }
 
 /* Error and success message styles */
 .error {
-    color: #f44336;
+    color: #d32f2f;
     font-weight: bold;
-    text-shadow: 0 0 10px rgba(244, 67, 54, 0.7);
 }
 
 .success {
     color: #388e3c;
     font-weight: bold;
-    text-shadow: 0 0 10px rgba(56, 142, 60, 0.7);
 }
 
 /* Message styling */
 #message {
-    margin-top: 25px;
-    font-size: 18px;
+    margin-top: 20px;
+    font-size: 16px;
 }
 
 /* Media queries for responsive design */
 @media (max-width: 768px) {
     .container {
-        padding: 35px;
+        padding: 30px;
     }
 
     h2 {
-        font-size: 30px;
+        font-size: 24px;
     }
 
     input[type="text"], select, button {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 
 @media (max-width: 480px) {
     .container {
-        padding: 25px;
+        padding: 20px;
     }
 
     h2 {
-        font-size: 26px;
+        font-size: 20px;
     }
 
     input[type="text"], select, button {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
