@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1. Visa Check</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Visa Requirement Check</h2>
+        <form>
+            <label for="countrySelect">Select Country</label>
+            <select id="countrySelect">
+                <option value="">Select a country</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="India">India</option>
+                <option value="UK">UK</option>
+                <option value="Australia">Australia</option>
+            </select>
+            <button type="button" onclick="checkVisa()">Check Visa</button>
+        </form>
+        <p id="visaMessage"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

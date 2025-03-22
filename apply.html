@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3. Visa Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Visa Application Form</h2>
+    <form id="visaForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your full name" required>
+        
+        <label for="passport">Passport Number</label>
+        <input type="text" id="passport" placeholder="Enter your passport number" required>
+        
+        <label for="country">Select Country</label>
+        <select id="country">
+            <option value="">--Select Country--</option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="India">India</option>
+            <option value="UK">UK</option>
+            <option value="Australia">Australia</option>
+        </select>
+        
+        <button type="submit">Apply for Visa</button>
+    </form>
+
+    <div id="message"></div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
